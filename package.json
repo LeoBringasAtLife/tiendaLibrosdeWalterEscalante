@@ -1,0 +1,15 @@
+{
+  "name": "tienda-libros-walter-escalante",
+  "version": "1.0.0",
+  "description": "Tienda de libros de Walter Escalante",
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./css/output.css --minify",
+    "watch:css": "npx tailwindcss -i ./src/input.css -o ./css/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.18"
+  }
+}

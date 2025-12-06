@@ -1,39 +1,101 @@
+# Tienda de Libros de Walter Escalante
+
+Sitio web estático para la colección de libros de Walter Escalante.
+
+## 🚀 Desarrollo
+
+### Requisitos previos
+
+- Node.js instalado (versión 14 o superior)
+
+### Instalación
+
+1. Clona el repositorio
+2. Instala las dependencias:
+
+```bash
+npm install
 ```
 
-tiendaLibrosdeWalterEscalante/
-│
-├── index.html              # Página principal (única página del sitio)
-├── tailwind.config.js      # Configuración de Tailwind CSS
-└── libros/                 # Carpeta con imágenes de portadas
-    ├── 30-proverbios.jpg
-    ├── corazon-no-transformado.jpg
-    ├── dicho-esta.jpg
-    ├── dicho-invierno.jpg
-    ├── dicho-otono.jpg
-    ├── dicho-verano.jpg
-    ├── fracasados.jpg
-    └── Mochup-libros.png
+### Scripts disponibles
 
+#### Compilar CSS (producción)
+
+Genera el archivo CSS optimizado y minificado:
+
+```bash
+npm run build:css
 ```
 
-## Próximos Pasos Sugeridos
+#### Modo desarrollo (watch)
 
-Marcar con una X las tareas completadas.
+Compila automáticamente el CSS cada vez que guardas cambios:
 
-- [x] Reemplazar contenido placeholder con textos reales
-- [x] Agregar precios reales a los libros
-- [] Implementar funcionalidad de compra (integración con pasarela de pago)
-- [] Crear sección de suscripción con formulario
-- [x] Optimizar imágenes para carga más rápida
-- [] Agregar meta tags para SEO
-- [] Implementar analytics (Google Analytics)
+```bash
+npm run watch:css
+```
 
-## Sugerencias de Mejora
+## 📁 Estructura del proyecto
 
-Marcar con una X las tareas completadas.
+```
+├── src/
+│   └── input.css          # Archivo fuente de Tailwind
+├── css/
+│   └── output.css         # CSS compilado (generado automáticamente)
+├── libros/                # Imágenes de los libros
+├── imagenes/              # Otros recursos
+├── index.html             # Página principal
+├── tailwind.config.js     # Configuración de Tailwind
+└── package.json           # Dependencias del proyecto
+```
 
-- [x] Imágenes de los libros: Asegúrate de que las portadas sean de alta calidad
-- [] Funcionalidad de compra: Los botones "Comprar" necesitarán enlaces reales a tu sistema de ventas
-- [x] Formulario de suscripción: Conectarlo a un servicio de email marketing (MailChimp, SendGrid, etc.)
-    - Configurar formspree en la página oficial.
-- [x] SEO: El título y meta description están bien, pero podrías añadir más meta tags (Open Graph para redes sociales)
+## 🎨 Estilos
+
+Este proyecto usa **Tailwind CSS v3** con compilación local para producción.
+
+- **Archivo de entrada**: `src/input.css`
+- **Archivo de salida**: `css/output.css` (~12KB minificado)
+
+### Añadir estilos personalizados
+
+Edita `src/input.css` para añadir tus propios estilos:
+
+```css
+@layer components {
+  .mi-clase-personalizada {
+    @apply bg-blue-500 text-white p-4;
+  }
+}
+```
+
+Luego ejecuta `npm run build:css` para compilar.
+
+## 📦 Despliegue
+
+1. Ejecuta `npm run build:css` para generar el CSS optimizado
+2. Sube todos los archivos excepto:
+   - `node_modules/`
+   - `src/`
+   - `package.json`
+   - `package-lock.json`
+   - `tailwind.config.js`
+
+Los archivos necesarios para producción son:
+
+- `index.html`
+- `css/output.css`
+- `libros/`
+- `imagenes/`
+
+## 🔧 Tecnologías
+
+- HTML5
+- Tailwind CSS v3
+- JavaScript vanilla
+- Formspree (para formularios)
+
+## 📝 Notas
+
+- El CSS está optimizado y solo incluye las clases que se usan en el HTML
+- El tamaño del CSS es ~12KB (comparado con ~300KB del CDN)
+- No se requiere JavaScript build process, solo CSS compilation

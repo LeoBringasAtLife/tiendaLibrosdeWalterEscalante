@@ -1,2 +1,6 @@
 /CONFIGURACION_FORMULARIO.md
 /GUIA_COMPRAS.md
+
+# Dependencies
+node_modules/
+package-lock.json
