@@ -83,6 +83,7 @@ Cuando subas a producción, asegúrate de:
    - ✅ `css/output.css`
    - ✅ `libros/`
    - ✅ `imagenes/`
+
    - ❌ `node_modules/`
    - ❌ `src/`
    - ❌ `package.json`
