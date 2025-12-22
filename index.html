@@ -44,15 +44,16 @@
   <link rel="stylesheet" href="css/output.css" />
 
   <style>
-    * {
+    *,
+    *::after,
+    *::before {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
     body {
-      font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        system-ui, sans-serif;
+      font-family: 'Inter', sans-serif;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       line-height: 1.6;
@@ -71,13 +72,13 @@
 
 <body class="bg-white text-gray-900">
   <!-- HEADER -->
-  <header class="border-b border-gray-200">
+  <header class="border border-gray-200">
     <div class="max-w-6xl mx-auto px-6 py-5">
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <div>
           <div class="text-xl font-semibold text-gray-900">
-            Walter Escalante
+            Iglesia Restauración
           </div>
         </div>
 
@@ -109,6 +110,9 @@
                 <a href="#libro-dicho-invierno"
                   class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900">Dicho Está: Edición
                   Invierno</a>
+                <a href="#libro-dicho-primavera"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900">Dicho Está: Edición
+                  Primavera</a>
                 <a href="#libro-fracasados"
                   class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900">Fracasados: Un
                   camino a la excelencia</a>
@@ -163,6 +167,9 @@
             <a href="#libro-dicho-invierno"
               class="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900 border-l border-gray-200">Dicho Está:
               Edición Invierno</a>
+            <a href="#libro-dicho-primavera"
+              class="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900 border-l border-gray-200">Dicho Está:
+              Edición Primavera</a>
             <a href="#libro-fracasados"
               class="block px-3 py-2 text-sm text-gray-600 hover:text-gray-900 border-l border-gray-200">Fracasados: Un
               camino a la excelencia</a>
@@ -433,131 +440,6 @@
             </div>
           </div>
 
-          <div class="col-span-1 md:col-span-2 mt-8 bg-gray-50 rounded-xl p-4 testimonial-carousel"
-            style="grid-column: 1 / -1">
-            <div class="relative max-w-4xl mx-auto">
-              <div class="overflow-hidden">
-                <div class="testimonials-track flex transition-transform duration-500 ease-out">
-                  <!-- Testimonio 1 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "Los libros de Walter han transformado mi perspectiva
-                        diaria. Cada reflexión es un recordatorio del amor y
-                        propósito de Dios en mi vida."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          Leonardo Bringas
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonio 2 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "Fracasados me ayudó a ver mis errores como
-                        oportunidades de crecimiento. Un libro que todo líder
-                        debería leer."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          Franco Vargas
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonio 3 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "Las reflexiones del libro <b>Fracasados</b> me
-                        llevaron a sentirme identificada y comprendida, y a
-                        entender que todos cometemos errores, pero que Dios
-                        nos sigue eligiendo y usando a pesar de ellos."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          Aylen Escalante
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonio 4 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "30 días con Proverbios cambió mi forma de tomar
-                        decisiones. Sabiduría bíblica aplicada a la vida
-                        moderna."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          María Rodríguez
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonio 5 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "Síntomas de un corazón no transformado me confrontó
-                        de manera amorosa. Necesitaba este mensaje."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          Juan Martínez
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Botones de navegación -->
-              <button
-                class="prev-testimonial absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white border border-gray-300 text-gray-900 w-10 h-10 flex items-center justify-center hover:bg-gray-100 transition-colors rounded"
-                aria-label="Anterior testimonio">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                </svg>
-              </button>
-              <button
-                class="next-testimonial absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white border border-gray-300 text-gray-900 w-10 h-10 flex items-center justify-center hover:bg-gray-100 transition-colors rounded"
-                aria-label="Siguiente testimonio">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-              </button>
-
-              <!-- Indicadores y control -->
-              <div class="flex justify-center items-center gap-4 mt-8">
-                <div class="flex gap-2">
-                  <button class="testimonial-dot w-2 h-2 bg-gray-900 transition-all" data-index="0"></button>
-                  <button class="testimonial-dot w-2 h-2 bg-gray-300 hover:bg-gray-400 transition-all"
-                    data-index="1"></button>
-                  <button class="testimonial-dot w-2 h-2 bg-gray-300 hover:bg-gray-400 transition-all"
-                    data-index="2"></button>
-                  <button class="testimonial-dot w-2 h-2 bg-gray-300 hover:bg-gray-400 transition-all"
-                    data-index="3"></button>
-                  <button class="testimonial-dot w-2 h-2 bg-gray-300 hover:bg-gray-400 transition-all"
-                    data-index="4"></button>
-                </div>
-                <button
-                  class="pause-play-button bg-white border border-gray-300 text-gray-900 w-8 h-8 flex items-center justify-center hover:bg-gray-100 transition-colors rounded"
-                  title="Pausar/Reanudar">
-                  <svg class="pause-icon w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"></path>
-                  </svg>
-                  <svg class="play-icon w-4 h-4 hidden" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
         </article>
 
         <!-- Book 3 -->
@@ -594,132 +476,7 @@
                 Comprar
               </a>
             </div>
-          </div>
-          <div class="col-span-1 md:col-span-2 mt-8 bg-gray-50 rounded-xl p-4 testimonial-carousel"
-            style="grid-column: 1 / -1">
-            <div class="relative max-w-4xl mx-auto">
-              <div class="overflow-hidden">
-                <div class="testimonials-track flex transition-transform duration-500 ease-out">
-                  <!-- Testimonio 1 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "Los libros de Walter han transformado mi perspectiva
-                        diaria. Cada reflexión es un recordatorio del amor y
-                        propósito de Dios en mi vida."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          Leonardo Bringas
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonio 2 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "Fracasados me ayudó a ver mis errores como
-                        oportunidades de crecimiento. Un libro que todo líder
-                        debería leer."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          Franco Vargas
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonio 3 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "Las reflexiones del libro <b>Fracasados</b> me
-                        llevaron a sentirme identificada y comprendida, y a
-                        entender que todos cometemos errores, pero que Dios
-                        nos sigue eligiendo y usando a pesar de ellos."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          Aylen Escalante
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonio 4 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "30 días con Proverbios cambió mi forma de tomar
-                        decisiones. Sabiduría bíblica aplicada a la vida
-                        moderna."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          María Rodríguez
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonio 5 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "Síntomas de un corazón no transformado me confrontó
-                        de manera amorosa. Necesitaba este mensaje."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          Juan Martínez
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
-              <!-- Botones de navegación -->
-              <button
-                class="prev-testimonial absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white border border-gray-300 text-gray-900 w-10 h-10 flex items-center justify-center hover:bg-gray-100 transition-colors rounded"
-                aria-label="Anterior testimonio">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                </svg>
-              </button>
-              <button
-                class="next-testimonial absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white border border-gray-300 text-gray-900 w-10 h-10 flex items-center justify-center hover:bg-gray-100 transition-colors rounded"
-                aria-label="Siguiente testimonio">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-              </button>
-
-              <!-- Indicadores y control -->
-              <div class="flex justify-center items-center gap-4 mt-8">
-                <div class="flex gap-2">
-                  <button class="testimonial-dot w-2 h-2 bg-gray-900 transition-all" data-index="0"></button>
-                  <button class="testimonial-dot w-2 h-2 bg-gray-300 hover:bg-gray-400 transition-all"
-                    data-index="1"></button>
-                  <button class="testimonial-dot w-2 h-2 bg-gray-300 hover:bg-gray-400 transition-all"
-                    data-index="2"></button>
-                  <button class="testimonial-dot w-2 h-2 bg-gray-300 hover:bg-gray-400 transition-all"
-                    data-index="3"></button>
-                  <button class="testimonial-dot w-2 h-2 bg-gray-300 hover:bg-gray-400 transition-all"
-                    data-index="4"></button>
-                </div>
-                <button
-                  class="pause-play-button bg-white border border-gray-300 text-gray-900 w-8 h-8 flex items-center justify-center hover:bg-gray-100 transition-colors rounded"
-                  title="Pausar/Reanudar">
-                  <svg class="pause-icon w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"></path>
-                  </svg>
-                  <svg class="play-icon w-4 h-4 hidden" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
         </article>
 
         <!-- Book 4 -->
@@ -755,132 +512,6 @@
                 Comprar
               </a>
             </div>
-          </div>
-          <div class="col-span-1 md:col-span-2 mt-8 bg-gray-50 rounded-xl p-4 testimonial-carousel"
-            style="grid-column: 1 / -1">
-            <div class="relative max-w-4xl mx-auto">
-              <div class="overflow-hidden">
-                <div class="testimonials-track flex transition-transform duration-500 ease-out">
-                  <!-- Testimonio 1 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "Los libros de Walter han transformado mi perspectiva
-                        diaria. Cada reflexión es un recordatorio del amor y
-                        propósito de Dios en mi vida."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          Leonardo Bringas
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonio 2 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "Fracasados me ayudó a ver mis errores como
-                        oportunidades de crecimiento. Un libro que todo líder
-                        debería leer."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          Franco Vargas
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonio 3 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "Las reflexiones del libro <b>Fracasados</b> me
-                        llevaron a sentirme identificada y comprendida, y a
-                        entender que todos cometemos errores, pero que Dios
-                        nos sigue eligiendo y usando a pesar de ellos."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          Aylen Escalante
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonio 4 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "30 días con Proverbios cambió mi forma de tomar
-                        decisiones. Sabiduría bíblica aplicada a la vida
-                        moderna."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          María Rodríguez
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonio 5 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "Síntomas de un corazón no transformado me confrontó
-                        de manera amorosa. Necesitaba este mensaje."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          Juan Martínez
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Botones de navegación -->
-              <button
-                class="prev-testimonial absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white border border-gray-300 text-gray-900 w-10 h-10 flex items-center justify-center hover:bg-gray-100 transition-colors rounded"
-                aria-label="Anterior testimonio">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                </svg>
-              </button>
-              <button
-                class="next-testimonial absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white border border-gray-300 text-gray-900 w-10 h-10 flex items-center justify-center hover:bg-gray-100 transition-colors rounded"
-                aria-label="Siguiente testimonio">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-              </button>
-
-              <!-- Indicadores y control -->
-              <div class="flex justify-center items-center gap-4 mt-8">
-                <div class="flex gap-2">
-                  <button class="testimonial-dot w-2 h-2 bg-gray-900 transition-all" data-index="0"></button>
-                  <button class="testimonial-dot w-2 h-2 bg-gray-300 hover:bg-gray-400 transition-all"
-                    data-index="1"></button>
-                  <button class="testimonial-dot w-2 h-2 bg-gray-300 hover:bg-gray-400 transition-all"
-                    data-index="2"></button>
-                  <button class="testimonial-dot w-2 h-2 bg-gray-300 hover:bg-gray-400 transition-all"
-                    data-index="3"></button>
-                  <button class="testimonial-dot w-2 h-2 bg-gray-300 hover:bg-gray-400 transition-all"
-                    data-index="4"></button>
-                </div>
-                <button
-                  class="pause-play-button bg-white border border-gray-300 text-gray-900 w-8 h-8 flex items-center justify-center hover:bg-gray-100 transition-colors rounded"
-                  title="Pausar/Reanudar">
-                  <svg class="pause-icon w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"></path>
-                  </svg>
-                  <svg class="play-icon w-4 h-4 hidden" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
         </article>
 
         <!-- Book 5 -->
@@ -917,134 +548,45 @@
               </a>
             </div>
           </div>
-          <div class="col-span-1 md:col-span-2 mt-8 bg-gray-50 rounded-xl p-4 testimonial-carousel"
-            style="grid-column: 1 / -1">
-            <div class="relative max-w-4xl mx-auto">
-              <div class="overflow-hidden">
-                <div class="testimonials-track flex transition-transform duration-500 ease-out">
-                  <!-- Testimonio 1 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "Los libros de Walter han transformado mi perspectiva
-                        diaria. Cada reflexión es un recordatorio del amor y
-                        propósito de Dios en mi vida."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          Leonardo Bringas
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonio 2 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "Fracasados me ayudó a ver mis errores como
-                        oportunidades de crecimiento. Un libro que todo líder
-                        debería leer."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          Franco Vargas
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonio 3 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "Las reflexiones del libro <b>Fracasados</b> me
-                        llevaron a sentirme identificada y comprendida, y a
-                        entender que todos cometemos errores, pero que Dios
-                        nos sigue eligiendo y usando a pesar de ellos."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          Aylen Escalante
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonio 4 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "30 días con Proverbios cambió mi forma de tomar
-                        decisiones. Sabiduría bíblica aplicada a la vida
-                        moderna."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          María Rodríguez
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonio 5 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "Síntomas de un corazón no transformado me confrontó
-                        de manera amorosa. Necesitaba este mensaje."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          Juan Martínez
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+        </article>
+
+        <!-- Book 6 -->
+        <article id="libro-dicho-primavera"
+          class="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-8 pb-8 border-b border-gray-200">
+          <div class="flex justify-start">
+            <img src="libros/dicho-primavera.webp" alt="Dicho Está — Edición Primavera"
+              class="w-48 max-h-72 object-contain border" />
+          </div>
+          <div>
+            <div class="text-xs text-gray-500 uppercase tracking-wide mb-2">
+              Nuevo
+            </div>
+            <h3 class="text-2xl font-semibold text-gray-900 mb-3 capitalize">
+              Dicho Está — Edición Primavera
+            </h3>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Para las temporadas donde el ánimo se enfría y la fe necesita
+              abrigo. Esta edición reúne frases y reflexiones breves que
+              apuntan al corazón, recordando verdades eternas en medio de días
+              difíciles. Palabras simples, profundas y oportunas para
+              reenfocar la esperanza y descansar en la presencia de Dios.
+            </p>
+            <div class="flex items-center gap-6">
+              <div>
+                <div class="text-2xl font-semibold text-gray-900">
+                  $15.000
                 </div>
               </div>
-
-              <!-- Botones de navegación -->
-              <button
-                class="prev-testimonial absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white border border-gray-300 text-gray-900 w-10 h-10 flex items-center justify-center hover:bg-gray-100 transition-colors rounded"
-                aria-label="Anterior testimonio">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                </svg>
-              </button>
-              <button
-                class="next-testimonial absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white border border-gray-300 text-gray-900 w-10 h-10 flex items-center justify-center hover:bg-gray-100 transition-colors rounded"
-                aria-label="Siguiente testimonio">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-              </button>
-
-              <!-- Indicadores y control -->
-              <div class="flex justify-center items-center gap-4 mt-8">
-                <div class="flex gap-2">
-                  <button class="testimonial-dot w-2 h-2 bg-gray-900 transition-all" data-index="0"></button>
-                  <button class="testimonial-dot w-2 h-2 bg-gray-300 hover:bg-gray-400 transition-all"
-                    data-index="1"></button>
-                  <button class="testimonial-dot w-2 h-2 bg-gray-300 hover:bg-gray-400 transition-all"
-                    data-index="2"></button>
-                  <button class="testimonial-dot w-2 h-2 bg-gray-300 hover:bg-gray-400 transition-all"
-                    data-index="3"></button>
-                  <button class="testimonial-dot w-2 h-2 bg-gray-300 hover:bg-gray-400 transition-all"
-                    data-index="4"></button>
-                </div>
-                <button
-                  class="pause-play-button bg-white border border-gray-300 text-gray-900 w-8 h-8 flex items-center justify-center hover:bg-gray-100 transition-colors rounded"
-                  title="Pausar/Reanudar">
-                  <svg class="pause-icon w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"></path>
-                  </svg>
-                  <svg class="play-icon w-4 h-4 hidden" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z"></path>
-                  </svg>
-                </button>
-              </div>
+              <a href="https://wa.me/5491162756296?text=Hola,%20me%20interesa%20comprar%20el%20libro%20'Dicho%20Está%20—%20Edición%20Primavera'"
+                target="_blank"
+                class="bg-gray-900 text-white px-6 py-2.5 text-sm font-medium uppercase hover:bg-gray-800 transition-colors">
+                Comprar
+              </a>
             </div>
           </div>
         </article>
 
-        <!-- Book 6 -->
+        <!-- Book 7 -->
         <article id="libro-fracasados"
           class="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-8 pb-8 border-b border-gray-200">
           <div class="flex justify-start">
@@ -1078,134 +620,9 @@
               </a>
             </div>
           </div>
-          <div class="col-span-1 md:col-span-2 mt-8 bg-gray-50 rounded-xl p-4 testimonial-carousel"
-            style="grid-column: 1 / -1">
-            <div class="relative max-w-4xl mx-auto">
-              <div class="overflow-hidden">
-                <div class="testimonials-track flex transition-transform duration-500 ease-out">
-                  <!-- Testimonio 1 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "Los libros de Walter han transformado mi perspectiva
-                        diaria. Cada reflexión es un recordatorio del amor y
-                        propósito de Dios en mi vida."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          Leonardo Bringas
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonio 2 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "Fracasados me ayudó a ver mis errores como
-                        oportunidades de crecimiento. Un libro que todo líder
-                        debería leer."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          Franco Vargas
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonio 3 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "Las reflexiones del libro <b>Fracasados</b> me
-                        llevaron a sentirme identificada y comprendida, y a
-                        entender que todos cometemos errores, pero que Dios
-                        nos sigue eligiendo y usando a pesar de ellos."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          Aylen Escalante
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonio 4 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "30 días con Proverbios cambió mi forma de tomar
-                        decisiones. Sabiduría bíblica aplicada a la vida
-                        moderna."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          María Rodríguez
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonio 5 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "Síntomas de un corazón no transformado me confrontó
-                        de manera amorosa. Necesitaba este mensaje."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          Juan Martínez
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Botones de navegación -->
-              <button
-                class="prev-testimonial absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white border border-gray-300 text-gray-900 w-10 h-10 flex items-center justify-center hover:bg-gray-100 transition-colors rounded"
-                aria-label="Anterior testimonio">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                </svg>
-              </button>
-              <button
-                class="next-testimonial absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white border border-gray-300 text-gray-900 w-10 h-10 flex items-center justify-center hover:bg-gray-100 transition-colors rounded"
-                aria-label="Siguiente testimonio">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-              </button>
-
-              <!-- Indicadores y control -->
-              <div class="flex justify-center items-center gap-4 mt-8">
-                <div class="flex gap-2">
-                  <button class="testimonial-dot w-2 h-2 bg-gray-900 transition-all" data-index="0"></button>
-                  <button class="testimonial-dot w-2 h-2 bg-gray-300 hover:bg-gray-400 transition-all"
-                    data-index="1"></button>
-                  <button class="testimonial-dot w-2 h-2 bg-gray-300 hover:bg-gray-400 transition-all"
-                    data-index="2"></button>
-                  <button class="testimonial-dot w-2 h-2 bg-gray-300 hover:bg-gray-400 transition-all"
-                    data-index="3"></button>
-                  <button class="testimonial-dot w-2 h-2 bg-gray-300 hover:bg-gray-400 transition-all"
-                    data-index="4"></button>
-                </div>
-                <button
-                  class="pause-play-button bg-white border border-gray-300 text-gray-900 w-8 h-8 flex items-center justify-center hover:bg-gray-100 transition-colors rounded"
-                  title="Pausar/Reanudar">
-                  <svg class="pause-icon w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"></path>
-                  </svg>
-                  <svg class="play-icon w-4 h-4 hidden" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
         </article>
 
-        <!-- Book 7 -->
+        <!-- Book 8 -->
         <article id="libro-corazon"
           class="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-8 pb-8 border-b border-gray-200">
           <div class="flex justify-start">
@@ -1238,131 +655,7 @@
               </a>
             </div>
           </div>
-          <div class="col-span-1 md:col-span-2 mt-8 bg-gray-50 rounded-xl p-4 testimonial-carousel"
-            style="grid-column: 1 / -1">
-            <div class="relative max-w-4xl mx-auto">
-              <div class="overflow-hidden">
-                <div class="testimonials-track flex transition-transform duration-500 ease-out">
-                  <!-- Testimonio 1 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "Los libros de Walter han transformado mi perspectiva
-                        diaria. Cada reflexión es un recordatorio del amor y
-                        propósito de Dios en mi vida."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          Leonardo Bringas
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonio 2 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "Fracasados me ayudó a ver mis errores como
-                        oportunidades de crecimiento. Un libro que todo líder
-                        debería leer."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          Franco Vargas
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonio 3 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "Las reflexiones del libro <b>Fracasados</b> me
-                        llevaron a sentirme identificada y comprendida, y a
-                        entender que todos cometemos errores, pero que Dios
-                        nos sigue eligiendo y usando a pesar de ellos."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          Aylen Escalante
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonio 4 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "30 días con Proverbios cambió mi forma de tomar
-                        decisiones. Sabiduría bíblica aplicada a la vida
-                        moderna."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          María Rodríguez
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonio 5 -->
-                  <div class="w-full flex-shrink-0 px-4">
-                    <div class="pl-6 py-8">
-                      <p class="text-gray-900 mb-6 leading-relaxed text-lg">
-                        "Síntomas de un corazón no transformado me confrontó
-                        de manera amorosa. Necesitaba este mensaje."
-                      </p>
-                      <div>
-                        <div class="font-semibold text-gray-900">
-                          Juan Martínez
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
-              <!-- Botones de navegación -->
-              <button
-                class="prev-testimonial absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white border border-gray-300 text-gray-900 w-10 h-10 flex items-center justify-center hover:bg-gray-100 transition-colors rounded"
-                aria-label="Anterior testimonio">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                </svg>
-              </button>
-              <button
-                class="next-testimonial absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white border border-gray-300 text-gray-900 w-10 h-10 flex items-center justify-center hover:bg-gray-100 transition-colors rounded"
-                aria-label="Siguiente testimonio">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-              </button>
-
-              <!-- Indicadores y control -->
-              <div class="flex justify-center items-center gap-4 mt-8">
-                <div class="flex gap-2">
-                  <button class="testimonial-dot w-2 h-2 bg-gray-900 transition-all" data-index="0"></button>
-                  <button class="testimonial-dot w-2 h-2 bg-gray-300 hover:bg-gray-400 transition-all"
-                    data-index="1"></button>
-                  <button class="testimonial-dot w-2 h-2 bg-gray-300 hover:bg-gray-400 transition-all"
-                    data-index="2"></button>
-                  <button class="testimonial-dot w-2 h-2 bg-gray-300 hover:bg-gray-400 transition-all"
-                    data-index="3"></button>
-                  <button class="testimonial-dot w-2 h-2 bg-gray-300 hover:bg-gray-400 transition-all"
-                    data-index="4"></button>
-                </div>
-                <button
-                  class="pause-play-button bg-white border border-gray-300 text-gray-900 w-8 h-8 flex items-center justify-center hover:bg-gray-100 transition-colors rounded"
-                  title="Pausar/Reanudar">
-                  <svg class="pause-icon w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"></path>
-                  </svg>
-                  <svg class="play-icon w-4 h-4 hidden" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
         </article>
       </div>
     </div>
