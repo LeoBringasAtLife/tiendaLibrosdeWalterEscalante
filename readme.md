@@ -38,15 +38,18 @@ npm run watch:css
 **Estructura del proyecto**
 
 ```
+tiendaLibrosdeWalterEscalante/
+├── index.html              # Página principal (1240 líneas)
 ├── src/
-│   └── input.css          # Archivo fuente de Tailwind
+│   └── input.css          # Fuente de Tailwind CSS
 ├── css/
-│   └── output.css         # CSS compilado (generado automáticamente)
-├── libros/                # Imágenes de los libros
-├── imagenes/              # Otros recursos
-├── index.html             # Página principal del sitio web
+│   └── output.css         # CSS compilado (generado)
+├── libros/                # Imágenes de portadas (7 archivos .webp)
+├── imagenes/              # Otros recursos (logos, fotos, etc.)
+├── package.json           # Dependencias (Tailwind CSS)
 ├── tailwind.config.js     # Configuración de Tailwind
-└── package.json           # Dependencias del proyecto
+├── readme.md             # Documentación del proyecto
+└── TAILWIND_MIGRATION.md  # Documentación de la migración
 ```
 
 **Estilos CSS**
