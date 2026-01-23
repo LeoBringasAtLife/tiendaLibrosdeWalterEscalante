@@ -1,0 +1,38 @@
+.btn-rolling {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 !important;
+}
+
+.btn-rolling span {
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.btn-rolling span:first-child {
+  transform: translateY(0);
+  padding: 0.625rem 1.5rem;
+}
+
+.btn-rolling span:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(100%);
+}
+
+.btn-rolling:hover span:first-child {
+  transform: translateY(-100%);
+}
+
+.btn-rolling:hover span:last-child {
+  transform: translateY(0);
+}
